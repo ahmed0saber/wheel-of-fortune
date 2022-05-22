@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    position: relative;
+    font-family: 'Bitter', serif;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: #0C1618;
+    color: #FAF4D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 8px;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+h1{
+    margin: 10px 0;
+}
+.wheel-container{
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    margin: 10px 0;
+}
+.wheel{
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: conic-gradient(
+        #7E8420 0%,
+        #004643 1%, 
+        #004643 9%, 
+        #D1AC00 11%, 
+        #D1AC00 19%, 
+        #004643 21%, 
+        #004643 29%, 
+        #D1AC00 31%, 
+        #D1AC00 39%, 
+        #004643 41%, 
+        #004643 49%, 
+        #D1AC00 51%, 
+        #D1AC00 59%, 
+        #004643 61%, 
+        #004643 69%, 
+        #D1AC00 71%, 
+        #D1AC00 79%, 
+        #004643 81%, 
+        #004643 89%, 
+        #D1AC00 91%, 
+        #D1AC00 99%,
+        #7E8420 100%
+    );
+    overflow-x: hidden;
+}
+.wheel span{
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.one{
+    top: 12%;
+    left: 62%;
+}
+.two{
+    top: 26%;
+    left: 80%;
+}
+.three{
+    top: 49%;
+    left: 89%;
+}
+.four{
+    top: 72%;
+    left: 82%;
+}
+.five{
+    top: 85%;
+    left: 62%;
+}
+.sex{
+    top: 85%;
+    left: 38%;
+}
+.seven{
+    top: 72%;
+    left: 20%;
+}
+.eight{
+    top: 50%;
+    left: 10%;
+}
+.nine{
+    top: 26%;
+    left: 17%;
+}
+.ten{
+    top: 12%;
+    left: 38%;
+}
+.marker{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    -webkit-transform: translate(-50%, -10%);
+    -moz-transform: translate(-50%, -10%);
+    -ms-transform: translate(-50%, -10%);
+    -o-transform: translate(-50%, -10%);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid #FAF4D3;
+    filter: drop-shadow(0 0 0.15rem #000);
+    -webkit-filter: drop-shadow(0 0 0.15rem #000);
+}
+.btn-container{
+    margin: 10px 0;
+    border: 2px solid #0000;
+    padding: 4px;
+    transition-duration: 0.4s;
+    z-index: 2;
+}
+.btn-container:hover{
+    border: 2px #FAF4D3 solid;
+    transform: rotate(-3deg) scale(1.1);
+    -webkit-transform: rotate(-3deg) scale(1.1);
+    -moz-transform: rotate(-3deg) scale(1.1);
+    -ms-transform: rotate(-3deg) scale(1.1);
+    -o-transform: rotate(-3deg) scale(1.1);
+    cursor: pointer;
+}
+.btn{
+    padding: 8px 24px;
+    background-color: #FAF4D3;
+    color: #0C1618;
+    border: 2px #FAF4D3 solid;
+    transition-duration: 0.4s;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-container:hover .btn{
+    background-color: #0C1618;
+    color: #FAF4D3;
+}
+.alert{
+    width: 92%;
+    max-width: 500px;
+    padding: 10px;
+    background-color: #FAF4D3;
+    color: #0C1618;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150vw, -50%);
+    -webkit-transform: translate(-150vw, -50%);
+    -moz-transform: translate(-150vw, -50%);
+    -ms-transform: translate(-150vw, -50%);
+    -o-transform: translate(-150vw, -50%);
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 2px 2px #21212121;
+}
+.alert.shown{
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.alert .quote{
+    line-height: 30px;
+    font-size: 20px;
+    margin: 6px 0;
+}
+.close{
+    padding: 8px 24px;
+    font-size: 18px;
+    background-color: #0C1618;
+    color: #FAF4D3;
+    border: none;
+}
+.alert .number{
+    font-size: 24px;
+    background-color: #0C1618;
+    color: #FAF4D3;
+    width: 40px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
