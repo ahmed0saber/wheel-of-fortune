@@ -195,6 +195,11 @@ h1{
     background-color: #0C1618;
     color: #FAF4D3;
     border: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.close:hover{
+    opacity: 0.8;
 }
 .alert .number{
     font-size: 24px;
