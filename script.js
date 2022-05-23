@@ -19,7 +19,7 @@ symbolSegments = {
 
 startButton.addEventListener('click', () => {
     startButton.style.pointerEvents = 'none'
-    deg = Math.floor(2000 + Math.random() * 2000) * -1
+    deg = Math.floor(80 + Math.random() * 20) * -1 * zoneSize + 18
     wheel.style.transition = 'all 4s ease-out'
     wheel.style.transform = `rotate(${deg}deg)`
     wheel.classList.add('blur')
